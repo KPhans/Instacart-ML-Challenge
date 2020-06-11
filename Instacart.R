@@ -25,8 +25,6 @@ QuantityOrder <-sqldf::sqldf("SELECT SUM(quantity) AS TOTAL_QUANTITY, trip_id FR
 Master_data_Train <- join(Master_data_Train,QuantityOrder, by = "trip_id")
 ```
 
-
-
 ```{r}
 #DATA CLEANSING PART 1
 #We will first create a column called duration to see the difference between Start and End time as that will be our dependent variable.
