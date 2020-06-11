@@ -207,9 +207,6 @@ TESTSet <- TESTSet[,c(1,7)]
 TESTSet$shopping_time <- round(TESTSet$shopping_time,0)
 
 TESTPREDICTIONS <- write.csv(TESTSet, "TESTPREDICTIONS.csv")
-```
-
-
 
 ```{r}
 #CONSIDERATIONS AND ALTERNATIVES / NEXT STEPS
