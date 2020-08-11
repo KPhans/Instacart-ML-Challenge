@@ -88,8 +88,6 @@ Balanced_Train$fulfillment_model[Balanced_Train$fulfillment_model == 'model_2'] 
 #We will use the balanced train dataset from now!
 ```
 
-
-
 ```{r}
 #DATA CLEANSING PART 4
 #We will do a normality check on the data using shapiro-wilks test. 
@@ -99,8 +97,6 @@ shapiro.test(Balanced_Train$TOTAL_QUANTITY[1:5000])
 #We ue the first 5000 rows because the shapiro wilks test has a test parameter for up to max 5000 rows. 
 #Both tests have p values under 0.05. Therefore, we can reject the null hypothesis of normality. 
 ```
-
-
 
 ```{r}
 #DATA CLEANSING PART 5
@@ -135,7 +131,6 @@ stepwiseModel <- stepAIC(model)
 #We will now attempt forward and backwards elimination using regular subsets. 
 
 ```
-
 
 ```{r}
 #LASSSO REGRESSION 
